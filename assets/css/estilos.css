@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    /*Centralizar o nosso quadro (canvas)*/
+    background-color: #2d2c32;
+    /*Cor de fundo cinza para a página toda, exceto o canvas*/
+}
+
+/*Começando a estilizar nosso canvas*/
+#board{
+    background-color: black;
+    /*cor de fundo da cor preta*/
+    border-top: 5px solid #ff9b68;
+    border-left: 5px solid #ff9b68;
+    border-right: 5px solid #ff9b68;
+    /*Dando cor as bordas do jogo*/
+}
+
+/*tamanho e alterações do icone do audio*/
+#audios{
+	width:50;
+	height;10;
+}

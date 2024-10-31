@@ -1,0 +1,23 @@
+body{
+	text-align:center;
+	background-color:#ac00e6;
+}
+
+#iniciar{
+	width:200;
+	height:80;
+	background-color:#ffd700;
+	border:1000;
+	border-color:#e68a00;
+	border-radius:10%;
+}
+
+#img{
+	width:300;
+	height:300;
+}
+
+#gameover{
+	width:400;
+	height:400;
+}
