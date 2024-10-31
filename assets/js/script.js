@@ -53,6 +53,7 @@ let blockY = 45;
 
 let score = 0;
 let gameOver = false;
+<<<<<<< HEAD
 let a = 1;
 
 const audio = new Audio('./assets/audio/jazz.mp3');
@@ -61,6 +62,8 @@ function playAudio(){
 	let x =document.getElementById ("audio");
 	x.play();
 }
+=======
+>>>>>>> f7382e592dd28a5fd6e34aa43cdd1d2ee8f5ea43
 
 window.onload = function() {
     board = document.getElementById("board");
@@ -92,7 +95,11 @@ function update() {
     context.clearRect(0, 0, board.width, board.height);
 
     //Jogador
+<<<<<<< HEAD
     context.fillStyle = "#e68a00"; //preenchimento da cor do jogador
+=======
+    context.fillStyle = "#e4185f"; //preenchimento da cor do jogador
+>>>>>>> f7382e592dd28a5fd6e34aa43cdd1d2ee8f5ea43
     context.fillRect(player.x, player.y, player.width, player.height);
     //O método fillRect está desenhando um retângulo baseado nos dados de posição e tamanho do player
 
@@ -123,12 +130,21 @@ function update() {
     }
     else if (ball.y + ball.height >= boardHeight) {
         //se a bola tocar a base do canvas = GAME OVER
+<<<<<<< HEAD
 		window.location.href ="gameover.html";
+=======
+        context.font = "20px sans-serif";
+        context.fillText("Game Over: Press 'Space' to Restart", 80, 400);
+>>>>>>> f7382e592dd28a5fd6e34aa43cdd1d2ee8f5ea43
         gameOver = true;
     }
 
     //blocos
+<<<<<<< HEAD
     context.fillStyle = "#ac00e6";
+=======
+    context.fillStyle = "skyblue";
+>>>>>>> f7382e592dd28a5fd6e34aa43cdd1d2ee8f5ea43
     for (let i = 0; i < blockArray.length; i++) {
         let block = blockArray[i];
         if (!block.break) {
