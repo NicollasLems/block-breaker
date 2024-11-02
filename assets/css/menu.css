@@ -1,0 +1,29 @@
+body{
+	text-align:center;/*alinha todos os textos e elementos no centro*/
+	background-image:url('city.png'); /*imagem usada de fundo no site*/
+	background-size:cover;/*faz a imagem cobrir todo o fundo sem repetição*/
+}
+
+/*id do botão para editar ele*/
+#iniciar{
+	width:200;
+	height:80;
+	background-color:#ffd700;
+	border:1000;
+	border-color:#e68a00;
+	border-radius:10%;
+	font-size:30px;
+}
+
+/*id para editar a imagem de logo do jogo*/
+#img{
+	width:400;
+	height:400;
+}
+
+/*id para editar a imagem de game over*/
+#gameover{
+	width:400;
+	height:400;
+	font-size:30px;
+}
