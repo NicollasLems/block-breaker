@@ -1,8 +1,13 @@
 body{
     text-align: center;
     /*Centralizar o nosso quadro (canvas)*/
+<<<<<<< HEAD
 	background-image:url('city.png'); /*imagem usada de fundo no site*/
 	background-size:cover;/*faz a imagem cobrir todo o fundo sem repetição*/
+=======
+    background-color: #2d2c32;
+    /*Cor de fundo cinza para a página toda, exceto o canvas*/
+>>>>>>> 101eb078733dc345387fe6e6ec7965799e32e091
 }
 
 /*Começando a estilizar nosso canvas*/
@@ -15,6 +20,7 @@ body{
     /*Dando cor as bordas do jogo*/
 }
 
+<<<<<<< HEAD
 /*tamanho e alterações do icone do audio*/
 #audios{
 	width:10;
@@ -27,3 +33,13 @@ body{
 	border:10;
 	border-color:#e68a00;
 }
+=======
+<<<<<<< HEAD
+/*tamanho e alterações do icone do audio*/
+#audios{
+	width:50;
+	height;10;
+}
+=======
+>>>>>>> f7382e592dd28a5fd6e34aa43cdd1d2ee8f5ea43
+>>>>>>> 101eb078733dc345387fe6e6ec7965799e32e091

@@ -53,20 +53,33 @@ let blockY = 45;
 
 let score = 0;
 let gameOver = false;
+<<<<<<< HEAD
 
 const audio = new Audio('./assets/audio/jazz.mp3');//uma const de audio para a execução dele
 
 //função de execucão de audio
+=======
+<<<<<<< HEAD
+let a = 1;
+
+const audio = new Audio('./assets/audio/jazz.mp3');
+
+>>>>>>> 101eb078733dc345387fe6e6ec7965799e32e091
 function playAudio(){
 	let x =document.getElementById ("audio");
 	x.play();
 }
+<<<<<<< HEAD
 
 let vidas = 3;//declaração da variavel de vidas
 
 	function dano(vidas){ //função que executa o dano quando chamada
 		return vidas - 1
 	}
+=======
+=======
+>>>>>>> f7382e592dd28a5fd6e34aa43cdd1d2ee8f5ea43
+>>>>>>> 101eb078733dc345387fe6e6ec7965799e32e091
 
 window.onload = function() {
     board = document.getElementById("board");
@@ -98,7 +111,15 @@ function update() {
     context.clearRect(0, 0, board.width, board.height);
 
     //Jogador
+<<<<<<< HEAD
     context.fillStyle = "#e68a00"; //preenchimento da cor do jogador
+=======
+<<<<<<< HEAD
+    context.fillStyle = "#e68a00"; //preenchimento da cor do jogador
+=======
+    context.fillStyle = "#e4185f"; //preenchimento da cor do jogador
+>>>>>>> f7382e592dd28a5fd6e34aa43cdd1d2ee8f5ea43
+>>>>>>> 101eb078733dc345387fe6e6ec7965799e32e091
     context.fillRect(player.x, player.y, player.width, player.height);
     //O método fillRect está desenhando um retângulo baseado nos dados de posição e tamanho do player
 
@@ -129,6 +150,7 @@ function update() {
     }
     else if (ball.y + ball.height >= boardHeight) {
         //se a bola tocar a base do canvas = GAME OVER
+<<<<<<< HEAD
 		resetGame() //chamando a função para resetar o jogo quando a bola tocar a base de canvas
 		if(vidas <= 0){ //o redirecionamento até a guia de derrota caso as vidas fiquem menores ou igual a 0
 		window.location.href ="gameover.html";
@@ -138,6 +160,23 @@ function update() {
 
     //blocos
     context.fillStyle = "#ac00e6";
+=======
+<<<<<<< HEAD
+		window.location.href ="gameover.html";
+=======
+        context.font = "20px sans-serif";
+        context.fillText("Game Over: Press 'Space' to Restart", 80, 400);
+>>>>>>> f7382e592dd28a5fd6e34aa43cdd1d2ee8f5ea43
+        gameOver = true;
+    }
+
+    //blocos
+<<<<<<< HEAD
+    context.fillStyle = "#ac00e6";
+=======
+    context.fillStyle = "skyblue";
+>>>>>>> f7382e592dd28a5fd6e34aa43cdd1d2ee8f5ea43
+>>>>>>> 101eb078733dc345387fe6e6ec7965799e32e091
     for (let i = 0; i < blockArray.length; i++) {
         let block = blockArray[i];
         if (!block.break) {
@@ -167,6 +206,7 @@ function update() {
     //pontuação
     context.font = "20px sans-serif";
     context.fillText(score, 10, 25);
+<<<<<<< HEAD
 	
 	//texto vidas
 	context.font = "20px sans-serif";
@@ -175,6 +215,8 @@ function update() {
 	//valor de vidas atual
 	context.font = "20px sans-serif";
     context.fillText(vidas, 475, 25);
+=======
+>>>>>>> 101eb078733dc345387fe6e6ec7965799e32e091
 }
 
 function outOfBounds(xPosition) {
@@ -276,5 +318,8 @@ function resetGame() {
     blockRows = 3;
     score = 0;
     createBlocks();
+<<<<<<< HEAD
 	vidas = dano(vidas) //chamando a função para causar dano na vida do jogador
+=======
+>>>>>>> 101eb078733dc345387fe6e6ec7965799e32e091
 }

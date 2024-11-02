@@ -1,10 +1,17 @@
 body{
+<<<<<<< HEAD
 	text-align:center;/*alinha todos os textos e elementos no centro*/
 	background-image:url('city.png'); /*imagem usada de fundo no site*/
 	background-size:cover;/*faz a imagem cobrir todo o fundo sem repetição*/
 }
 
 /*id do botão para editar ele*/
+=======
+	text-align:center;
+	background-color:#ac00e6;
+}
+
+>>>>>>> 101eb078733dc345387fe6e6ec7965799e32e091
 #iniciar{
 	width:200;
 	height:80;
@@ -12,6 +19,7 @@ body{
 	border:1000;
 	border-color:#e68a00;
 	border-radius:10%;
+<<<<<<< HEAD
 	font-size:30px;
 }
 
@@ -26,4 +34,16 @@ body{
 	width:400;
 	height:400;
 	font-size:30px;
+=======
+}
+
+#img{
+	width:300;
+	height:300;
+}
+
+#gameover{
+	width:400;
+	height:400;
+>>>>>>> 101eb078733dc345387fe6e6ec7965799e32e091
 }
